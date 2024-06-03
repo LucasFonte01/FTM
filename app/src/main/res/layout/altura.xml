@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#013A4E"
+    android:padding="16dp">
+
+    <!-- Botão Login no canto superior esquerdo -->
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#FFFFFF" />
+
+    <!-- Botão Menu no canto superior direito -->
+    <Button
+        android:id="@+id/button_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#FFFFFF" />
+
+    <!-- Texto da pergunta centralizado horizontalmente abaixo dos botões -->
+    <TextView
+        android:id="@+id/text_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qual a Sua Altura ?:"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_below="@id/button_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <!-- Botão para alternar entre Metros/Polegadas -->
+    <Button
+        android:id="@+id/button_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metros"
+        android:layout_below="@id/text_question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp" />
+
+    <!-- Campo de entrada para a altura -->
+    <EditText
+        android:id="@+id/edit_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Digite sua altura"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:layout_below="@id/button_toggle"
+        android:layout_marginTop="20dp"
+        android:padding="10dp" />
+
+    <!-- Texto para mostrar a altura em ambas unidades -->
+    <TextView
+        android:id="@+id/text_converted_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:layout_below="@id/edit_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Botão Próximo no final da página -->
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Próximo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
